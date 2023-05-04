@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af26201b1c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://miro.medium.com/max/905/1*UZjrurSi-eoitQDFkMlmlw.png" class="logo">
+                <ul id="'sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opennemu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>UI/UX Designer</p> -->
+                <H1>Hi, I am <span>Varni Bavarva</span></H1>
+            </div>
+            <div class="typing">
+                <h1>I am <span class="auto-type"></span></h1>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed = new Typed(".auto-type", {
+                    strings: ["Student", "Graphic Designer", "UI Designer", "Web Developer"],
+                    typeSpeed: 75,
+                    backSpeed: 75,
+                    loop: true
+                })
+            </script>
+
+        </div>
+    </div>
+
+    <!------------ about ------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/profile2.jpg" Varni">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am flexible, reliable and possess excellent time keeping skills.
+                        I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
+                        I am a mature team worker and adaptable to all challenging situations.
+                        I am able to work well both in a team environment as well as using own initiative.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div id="skills">
+                        </div>
+                        <ul>
+                            <li><span>UI/IX</span><br>Design Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Graphic Designing</span><br>Graphical Work</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022- Current</span><br>Figma Working</li>
+                            <li><span>2022- Current</span><br>Team Lead at E-Cell ADIT</li>
+                            <li><span>Graphic Designing</span><br>Poster Making</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span><br>B.E. IT Student</li>
+                            <li><span>2020</span><br>12 Passed</li>
+                            <li><span>2018</span><br>10 Passed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+   
+    <!---------------------------------SKILLS------------------>
+
+    <!-----------------SERVICES----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>UI/UX Design</h2>
+                    <P>UI UX designers create the user interface for an app,
+                        website,or other interactive media.</P>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <P>UI UX designers create the user interface for an app,
+                        website,or other interactive media.</P>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <P>UI UX designers create the user interface for an app,
+                        website,or other interactive media.</P>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-------------PORTFOLIO----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/ui.jpg">
+                    <div class="layer">
+                        <h3>NARI- A Women Safety Application</h3>
+                        <p>I make ui of women safety app.</p>
+                        <a href="https://drive.google.com/drive/folders/1WvzQOMAPXI_5VWlgZHFbMFZ3T5heMM9U?usp=share_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/Dream Designing 3.jpg">
+                    <div class="layer">
+                        <br>
+                        <h3>Dream Designing</h3>
+                        <p>I make some posters, videos regrading festivals. </p>
+                        <a href="https://www.instagram.com/dream_designing1"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://api.time.com/wp-content/uploads/2021/02/laptop-home-office.jpg">
+                    <div class="layer">
+                        <h3>women safety app</h3>
+                        <p>I make ui of women safety app.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <br>
+    <br>
+    <br>
+    <br> -->
+    
+    <!-------------contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> varnibavarva2011@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9824329404</p>
+                    <div class="social-icons">
+                        <!-- <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://www.instagram.com/varni_bavarva"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/varni-bavarva"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Varni2011"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Resume.pdf" class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright by © Varni Bavarva</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function opennemu() {
+            sidemenu.style.right = "0";
+        }
+        function opennemu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxz-hUXz6b9GWZoQ8qVsemgg3Seth2moZHJbavmjwcoLXPHMwM0RiKc3QO2AnvWu3PA8w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-------------Visiter-->
+    <!-- <p>This page was viewed</p>
+    <h1 id="count">0</h1>
+    <p>times</p>
+
+    <script>
+        const countEl = document.getElementById('count');
+
+        updateVisitCount();
+
+        function updateVisitCount() {
+            fetch('htps://api.countapi.xyz/update/florin-popcom/codepen/?amount=1t')
+                .then(res => res.json())
+                .then(res => {
+                    countEl.innerHTML = res.value;
+                })
+        }
+    </script> -->
+
+
+    <!-- <div>Website visit count:</div>
+    <div class="website-counter"></div>
+    <button id="reset">Reset</button> -->
+
+    <!-- <scrip>
+
+        var counterContainer = document.querySelector(".website-counter");
+        var resetButton = document.querySelector("#reset");
+        var visitCount = localStorage.getItem("page_view"); -->
+
+    <!-- // Check if page_view entry is present
+        if (visitCount) {
+            visitCount = Number(visitCount) + 1;
+            localStorage.setItem("page_view", visitCount);
+        } else {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+        }
+        counterContainer.innerHTML = visitCount;
+
+        // Adding onClick event listener
+        resetButton.addEventListener("click", () => {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+            counterContainer.innerHTML = visitCount;
+        }); -->
+
+
+
+
+
+</body>
+
+</html>
