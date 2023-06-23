@@ -19,7 +19,7 @@ body{
 }
 .typing{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background:none;
     color: #fff;
     display: flex;
@@ -39,7 +39,7 @@ body{
     background-image: url(images/background.jpg);
     background-position: top;
     background-size: cover;
-    background-attachment: fixed;   
+    background-attachment: local;   
 }
 .container{
     padding: 10px 10%;
@@ -194,7 +194,7 @@ nav ul li a:hover::after{
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40 px;
+    grid-gap: 10px;
     margin-top: 50px;
 
 }
@@ -237,12 +237,14 @@ nav ul li a:hover::after{
 /*------portfolio----*/
 #portfolio{
     padding: 50px 0;
+    position: relative;
 }
 
 .work-list{
     display: grid;
+    /* height: 1000px; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40 px;
+    grid-gap: 4px;
     margin-top: 50px; 
     
     
@@ -251,24 +253,25 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;   
+    height: auto;
     
     
 }
 .work img{
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
     border-radius: 10px;
     display: block;
     transition: trasform 0.5s;
 }
 
 .layer{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ffa600);
+    /* width: 100%;
+    height: 100%; */
+    background: #262626;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     overflow: hidden;
@@ -278,8 +281,14 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 300;
+    /* margin: auto; */
     transition: height 0.5s;
+}
+.layer:hover{
+        background: #FFA600;
+        transform: translateY(-10px);
     
 }
 .layer h3{
@@ -288,14 +297,14 @@ nav ul li a:hover::after{
 }
 
 .layer a{
-    margin-top: 20px;
+    margin: 20px;
     color: #ffa600;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
     background: #fff;
     width: 60px;
-    height: 60px;
+    height: 60px; 
     border-radius: 50%;
     text-align: center;
 
@@ -400,7 +409,7 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(https://miro.medium.com/max/905/1*UZjrurSi-eoitQDFkMlmlw.png);
+        background-image: url(images\background.jpg);
     }
     .header-text{
         margin-top: 100%;
@@ -587,4 +596,8 @@ body {
     /* color: red; */
     /* background-color: red; */
 }
+
+
+   
+    
 
