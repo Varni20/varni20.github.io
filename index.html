@@ -1,354 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/af26201b1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylenew.css" />
+    <script
+      src="https://kit.fontawesome.com/af26201b1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <!-- <img src="https://miro.medium.com/max/905/1*UZjrurSi-eoitQDFkMlmlw.png" class="logo"> -->
-                <ul id="'sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="opennemu()"></i>
-            </nav>
-            <div class="header-text">
-                <!-- <p>UI/UX Designer</p> -->
-                <H1>Hi, I am <span>Varni Bavarva</span></H1>
-            </div>
-            <div class="typing">
-                <h1>I am <span class="auto-type"></span></h1>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-            <script>
-                var typed = new Typed(".auto-type", {
-                    strings: ["Student", "Graphic Designer", "UI Designer", "Web Developer"],
-                    typeSpeed: 75,
-                    backSpeed: 75,
-                    loop: true
-                })
-            </script>
-
+      <div class="container">
+        <nav>
+          <!-- <img src="https://miro.medium.com/max/905/1*UZjrurSi-eoitQDFkMlmlw.png" class="logo"> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="opennemu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <p>UI/UX Designer</p> -->
+          <h1>Hi, I am <span>Varni Bavarva</span></h1>
         </div>
+        <div class="typing">
+          <h1>I am <span class="auto-type"></span></h1>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          var typed = new Typed(".auto-type", {
+            strings: [
+              "Student",
+              "Graphic Designer",
+              "UI Designer",
+              "Web Developer",
+            ],
+            typeSpeed: 75,
+            backSpeed: 75,
+            loop: true,
+          });
+        </script>
+      </div>
     </div>
 
     <!------------ about ------->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="/images/profile2.jpg" Varni">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p> I am flexible, reliable and possess excellent time keeping skills.
-                        I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
-                        I am a mature team worker and adaptable to all challenging situations.
-                        I am able to work well both in a team environment as well as using own initiative.</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Final Images/profile.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am flexible, reliable and possess excellent time keeping skills.
+              I am an enthusiastic, self-motivated, reliable, responsible and
+              hard working person. I am a mature team worker and adaptable to
+              all challenging situations. I am able to work well both in a team
+              environment as well as using own initiative.
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <div id="skills">
-                        </div>
-                        <ul>
-                            <li><span>UI/UX</span><br>Design Web/App interfaces</li>
-                            <li><span>Python Development</span><br>Machine Learning, Data Science</li>
-                            <li><span>Graphic Designing</span><br>Graphical Work</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023- Current</span><br>Data Science Intern (Discover Technographics, Rajkot)
-                            </li>
-                            <li><span>2023</span><br>Machine Learning & Data Science Intern (PHN Technology, Pune) </li>
-                            <li><span>2023</span><br>PL:900 Microsoft Power Platform Fundamentals (certified by
-                                Microsoft) </li>
-                            <li><span>2022- Current</span><br>Team Lead at E-Cell ADIT</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022-Current</span><br>B.E. IT Student CGPA-8.19 (Till 6th Sem) </li>
-                            <li><span>2020</span><br>12 Passed (Percentage-76.30)</li>
-                            <li><span>2018</span><br>10 Passed (Percentage-87.83)</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <div id="skills"></div>
+              <ul>
+                <li><span>UI/UX</span><br />Design Web/App interfaces</li>
+                <li>
+                  <span>Web Development</span><br />Front end Developer
+                </li>
+                <li><span>Graphic Designing</span><br />Graphical Work</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023- Current</span><br />Data Science Intern (Discover
+                  Technographics, Rajkot)
+                </li>
+                <li>
+                  <span>2023</span><br />Machine Learning & Data Science Intern
+                  (PHN Technology, Pune)
+                </li>
+                <li>
+                  <span>2023</span><br />PL:900 Microsoft Power Platform
+                  Fundamentals (certified by Microsoft)
+                </li>
+                <li>
+                  <span>2022- Current</span><br />Team Lead at E-Cell ADIT
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-Current</span><br />B.E. IT Student CGPA-8.19 (Till
+                  6th Sem)
+                </li>
+                <li><span>2020</span><br />12 Passed (Percentage-76.30)</li>
+                <li><span>2018</span><br />10 Passed (Percentage-87.83)</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
 
-    <!---------------------------------SKILLS------------------>
-
-    <!-----------------SERVICES----------->
+    <!-- SERVICES -->
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-brands fa-figma"></i>
-                    <!-- <i class="fa-solid fa-code"></i> -->
-                    <h2>UI/UX Design</h2>
-                    <P>UI design focuses on creating intuitive and aesthetically pleasing interfaces to enhance user
-                        interaction and experience.</P>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <P>Web design is the art of creating visually appealing and user-friendly websites.</P>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-pen-nib"></i>
-                    <!-- <i class="fa-solid fa-pen-nib"></i> -->
-                    <h2>Graphic Design</h2>
-                    <P>Graphic design is the practice of visually communicating ideas and messages through creative and
-                        artistic elements.UI UX designers create the user interface for an app,
-                        website,or other interactive media.</P>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-                <div>
-                    <!-- <i class="fa-solid fa-chart-mixed"></i>  -- PRO ICON-->  
-                    <i class="fa-solid fa-atom"></i>
-                    <h2>Data Science</h2>
-                    <P>Data science is the field that combines statistical analysis, machine learning, and programming
-                        to extract insights and knowledge from data, enabling data-driven decision-making.</P>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-figma"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              UI design focuses on crafting visually engaging interfaces using elements like icons and typography, enhancing user interaction. By establishing visual hierarchy and brand consistency, it guides users effectively. Collaborating with UX design, UI design creates a seamless and aesthetically pleasing user experience.</p>
+           <!--- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-bezier-curve"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Graphic design is the craft of visually communicating ideas and messages using typography, imagery, and layout. It creates compelling visuals for branding, advertising, and storytelling. Through a combination of artistic elements, graphic design captures attention, conveys information, and evokes emotions. It's a powerful tool that transforms concepts into captivating visuals.
+            </p>
+           <!--- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Web development involves building and maintaining websites, aiding businesses in establishing an online presence, showcasing products/services, and engaging customers. It provides platforms for e-commerce, information dissemination, and user interaction, enhancing brand visibility and overall success.
+            </p>
+           <!--- <a href="#">Learn More</a> -->
+          </div>
         </div>
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    <!-- PROJECTS -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="services-list">
-                <div>
-                  <!----  <i class="fa-brands fa-figma"></i> -->
-                    <!-- <i class="fa-solid fa-code"></i> -->
-                    
-                    <h2>NARI- A Women Safety Application</h2>
-                    <p>In collaboration with my colleagues, I contributed to the development of an application where
-                        my role involved creating the user interface (UI) design using Figma.</p>
-                    <a href="https://drive.google.com/drive/folders/1WvzQOMAPXI_5VWlgZHFbMFZ3T5heMM9U?usp=share_link"><i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-                <div>
-                   <!----   <i class="fa-solid fa-code"></i> -->
-                    <h2>The Vote</h2>
-                    <P>Build a web application on which voters can elect the candidates for a post which is organized by the organization.</P>
-                    <a href="https://github.com/Varni2011/TheVote"><i
-                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-                <div>
-                  <!----    <i class="fa-solid fa-pen-nib"></i>
-                    <i class="fa-solid fa-pen-nib"></i> -->
-                    <h2>Home Security System</h2>
-                    <P>The Arduino-based security system uses ESP32, a camera, and a PIR sensor to detect house
-                        intrusions, capture photos, and send email notifications to the homeowner.</P>
-                    <a href="https://drive.google.com/drive/folders/1zYy8GxnDXS7xmOJnxzHu-uWINeAp88Pk"><i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
-                <div>
-                    <!-- <i class="fa-solid fa-chart-mixed"></i>  -- PRO ICON-->  
-                   <!----   <i class="fa-solid fa-atom"></i> -->
-                    <h2>Consumer Sentiment Analyzer</h2>
-                    <P>Sentiment analysis of product reviews using machine learning
-                        algorithms and pre-trained NLP models.</P>
-                    <a href="https://github.com/Varni20/Consumer-Sentiment-Analyzer"><i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+          <div class="project">
+            <img src="Final Images/Apple Vision.jpg" alt="Apple-Vision" />
+            <div class="layer">
+              <h3>Apple-Vision</h3>
+              <p>
+                I've created a website resembling Apple Vision using HTML, CSS, and JavaScript. It features modern elements like smooth scrolling (Locomotive) and dynamic animations (GSAP) for an engaging user experience. This project highlights my web development skills while capturing Apple's aesthetic and incorporating contemporary web techniques.
+              </p>
+              <a
+                href="https://github.com/Varni2011/Apple-Vision">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
+
+          <div class="project">
+            <img src="Final Images/Consumer-Sentiment-Analyze.jpg" alt="Consumer Sentiment Consumer-Sentiment-Analyzer" />
+            <div class="layer">
+              <h3>Consumer Sentiment Analyzer</h3>
+              <p>
+                Employing machine learning and pre-trained NLP models to interpret user sentiments from text data. This project highlights my expertise in NLP and offers businesses insights into customer feedback for enhancing user experiences.
+              </p>
+              <a
+                href="https://github.com/Varni20/Consumer-Sentiment-Analyzer"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="Final Images/UI.jpg" alt="UI" />
+            <div class="layer">
+              <h3>NARI- A Women Safety Application</h3>
+              <p>
+                I've implemented user-friendly and visually appealing UI elements using Figma, leveraging its features to optimize the design process. This project showcases my proficiency in creating intuitive interfaces while effectively utilizing design tools.
+              </p>
+              <a
+                href="https://github.com/Varni2011/NARI--A-WOMAN-SAFETY-APP"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project hidden">
+            <img src="Final Images/HR ANALYTICS.jpg" alt="HR ANALYTICS" />
+            <div class="layer">
+              <h3>HR ANALYTICS</h3>
+              <p>
+                I've designed interactive dashboards with insightful charts, offering valuable data insights. Additionally, I've established informative KPIs (Key Performance Indicators) to enhance data-driven decision-making. This project showcases my ability to visually represent data and create meaningful metrics for informed analysis.
+              </p>
+              <a
+                href="https://github.com/Varni20/Power-Bi-Project"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project hidden">
+            <img src="Final Images/Vote-01.jpg" alt="The Vote" />
+            <div class="layer">
+              <h3>The Vote</h3>
+              <p>
+                I've created a web application for organized candidate elections, streamlining the voting process for registered users. This project showcases my ability to develop user-friendly solutions that enhance democratic participation and ensure efficient candidate selection.
+              </p>
+              <a
+                href="https://github.com/thisissmitpatel/TheVote"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project hidden">
+            <img src="Final Images/dream designing1.jpg" alt="Dream Desinging" />
+            <div class="layer">
+              <h3>Dream Desinging</h3>
+              <p>
+                Welcome to Dream Designing1! Immerse yourself in a world of stunning posters and captivating videos. Join us on a visual journey that blends creativity and design, inspiring your feed with every scroll. Follow for daily design inspiration and let your imagination take flight.
+              </p>
+              <a
+                href="https://www.instagram.com/dream_designing1/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          
         </div>
+        <a class="btn">See More</a>
+      </div>
     </div>
-   
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- <br>
-    <br>
-    <br>
-    <br> -->
-
-    <!-------------contact-->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> varnibavarva2011@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 9824329404</p>
-                    <div class="social-icons">
-                        <!-- <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a> -->
-                        <a href="https://www.instagram.com/varni_bavarva"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/varni-bavarva"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Varni2011"><i class="fa-brands fa-github"></i></a>
+        <!-------------contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> varnibavarva2011@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 9824329404</p>
+                        <div class="social-icons">
+                            <!-- <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a> -->
+                            <a href="https://www.instagram.com/varni_bavarva"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/varni-bavarva"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Varni2011"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="Resume.pdf" class="btn btn2">Download Cv</a>
                     </div>
-                    <a href="Varni's Resume.pdf" class="btn btn2">Download Cv</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
                 </div>
             </div>
+            <div class="copyright">
+                <p>Copyright by © Varni Bavarva</p>
+            </div>
         </div>
-        <div class="copyright">
-            <p>Copyright by © Varni Bavarva</p>
-        </div>
-    </div>
-
-
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function opennemu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+    <script>
+    //   document
+    //     .querySelector(".btn-less")
+    //     .addEventListener("click", function () {
+    //       var hiddenProjects = document.querySelectorAll(".project.hidden");
+    //       for (var i = 0; i < hiddenProjects.length; i++) {
+    //         hiddenProjects[i].classList.add("hidden");
+    //       }
+    //       //   Change text of button to See More
+    //       this.textContent = "See More";
+    //       //   Change class of button to btn
+    //       this.classList.remove("btn-less");
+    //     });
+      document.querySelector(".btn").addEventListener("click", function () {
+        var hiddenProjects = document.querySelectorAll(".project.hidden");
+        for (var i = 0; i < hiddenProjects.length; i++) {
+          hiddenProjects[i].classList.remove("hidden");
+        }
+        // Remove the button
+        this.remove();
+      });
+
+      document
+        .querySelector(".btn-less")
+        .addEventListener("click", function () {
+          var hiddenProjects = document.querySelectorAll(".project.hidden");
+          for (var i = 0; i < hiddenProjects.length; i++) {
+            hiddenProjects[i].classList.add("hidden");
+          }
+          //   Change text of button to See More
+          this.textContent = "See More";
+          //   Change class of button to btn
+          this.classList.remove("btn-less");
+        });
+    </script>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+          document.querySelectorAll('.project').forEach(function(project) {
+            var rect = project.getBoundingClientRect();
+            if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+              project.classList.add('centered');
+            } else {
+              project.classList.remove('centered');
             }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-
+          });
+        });
     </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu")
-
-        function opennemu() {
-            sidemenu.style.right = "0";
-        }
-        function opennemu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxz-hUXz6b9GWZoQ8qVsemgg3Seth2moZHJbavmjwcoLXPHMwM0RiKc3QO2AnvWu3PA8w/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 3000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-
-    <!-------------Visiter-->
-    <!-- <p>This page was viewed</p>
-    <h1 id="count">0</h1>
-    <p>times</p>
-
-    <script>
-        const countEl = document.getElementById('count');
-
-        updateVisitCount();
-
-        function updateVisitCount() {
-            fetch('htps://api.countapi.xyz/update/florin-popcom/codepen/?amount=1t')
-                .then(res => res.json())
-                .then(res => {
-                    countEl.innerHTML = res.value;
-                })
-        }
-    </script> -->
-
-
-    <!-- <div>Website visit count:</div>
-    <div class="website-counter"></div>
-    <button id="reset">Reset</button> -->
-
-    <!-- <scrip>
-
-        var counterContainer = document.querySelector(".website-counter");
-        var resetButton = document.querySelector("#reset");
-        var visitCount = localStorage.getItem("page_view"); -->
-
-    <!-- // Check if page_view entry is present
-        if (visitCount) {
-            visitCount = Number(visitCount) + 1;
-            localStorage.setItem("page_view", visitCount);
-        } else {
-            visitCount = 1;
-            localStorage.setItem("page_view", 1);
-        }
-        counterContainer.innerHTML = visitCount;
-
-        // Adding onClick event listener
-        resetButton.addEventListener("click", () => {
-            visitCount = 1;
-            localStorage.setItem("page_view", 1);
-            counterContainer.innerHTML = visitCount;
-        }); -->
-
-
-
-
-
-</body>
-
+  </body>
 </html>
